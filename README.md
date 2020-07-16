@@ -595,20 +595,45 @@ meanings.
 
 
 ### Glove
+Use co-occurances to capture semantic meanings. Matrix factorization of log-counts with respect to weighted squared loss.
+
+Some form of negtive samplings. 
+
+![Glove](assets/Glove.jpg)
 
 [back to top](#data-science-question-answer)
 
 
 ### Fasttext
 
+Captures morphology info of words and better OOV representation
+
 [back to top](#data-science-question-answer)
 
 
 ### Elmo
+A language model seeks to compute the probability of a word, given some prior history of words seen. 
+Char-embedding(morphological features and OOV) -> Conv layer with max pooling(pick up n-gram features) -> 2 layer bi-LSTM with residule connection. Trained on 1B word benchmark.
+The original ELMo paper runs separate multi-layer forward and backward LSTMs and then concatenates the representations at each layer. 
+https://www.mihaileric.com/posts/deep-contextualized-word-representations-elmo/
 
 [back to top](#data-science-question-answer)
 
-### GPT 1-2-3
+### GPT 2-3
+
+GPT-2 is a large transformer-based language model with 1.5 billion parameters, trained on a dataset[1]
+GPT-2 is trained with a simple objective: predict the next word, given all of the previous words within some text. The diversity of the dataset causes this simple goal to contain naturally occurring demonstrations of many tasks across diverse domains. GPT-2 is a direct scale-up of GPT, with more than 10X the parameters and trained on more than 10X the amount of data.
+
+### Transformer
+N* (layers of multi-head attention layer (with residule connection) + FFN) enhanced by Positional encoder(pushes the attention layer to capture ordering info).
+
+![Transformer](assets/RNN vs attention.jpg)
+#### Attention
+Not based on RNN, more parallelizable and better ways to deal with gradient vanishing, not affected by ordering.
+
+Self attention: a reweighting mechnism on the word vectors to provide more context for the word, e.g. the vector for bank in river bank would be closer to river after self attention than money. The weight matrices are also propagated to back-propagation for updates.
+
+Multi-head attention: For words in an utterance, do self attention for all of them and finally concat and do a linear combination.
 
 [back to top](#data-science-question-answer)
 
