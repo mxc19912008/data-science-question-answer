@@ -627,7 +627,7 @@ GPT-2 is trained with a simple objective: predict the next word, given all of th
 ### Transformer
 N* (layers of multi-head attention layer (with residule connection) + FFN) enhanced by Positional encoder(pushes the attention layer to capture ordering info).
 
-![Transformer](assets/RNN vs attention.jpg)
+![Transformer](assets/RNN_attention.jpg)
 #### Attention
 Not based on RNN, more parallelizable and better ways to deal with gradient vanishing, not affected by ordering.
 
