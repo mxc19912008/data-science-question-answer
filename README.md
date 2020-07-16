@@ -1,17 +1,5 @@
-# Data Science Question Answer
+# Data Science/ML Question Answer
 
-The purpose of this repo is two fold:
-
-* To help you (data science practitioners) prepare for data science related interviews
-* To introduce to people who don't know but want to learn some basic data science concepts
-
-The focus is on the knowledge breadth so this is more of a quick reference rather than an in-depth study material. If you want to learn a specific topic in detail please refer to other content or reach out and I'd love to point you to materials I found useful.
-
-I might add some topics from time to time but hey, this should also be a community effort, right? Any pull request is welcome!
-
-Here are the categorizes:
-
-* [Resume](#resume)
 * [SQL](#sql)
 * [Tools and Framework](#tools-and-framework)
 * [Statistics and ML In General](#statistics-and-ml-in-general)
@@ -21,19 +9,6 @@ Here are the categorizes:
 * [Natural Language Processing](#natural-language-processing)
 * [System](#system)
 
-## Resume
-
-The only advice I can give about resume is to indicate your past data science / machine learning projects in a specific, **quantifiable** way. Consider the following two statements:
-
-> Trained a machine learning system
-
-and
-
-> Designed and deployed a deep learning model to recognize objects using Keras, Tensorflow, and Node.js. The model has 1/30 model size, 1/3 training time, 1/5 inference time, and 2x faster convergence compared with traditional neural networks (e.g, ResNet)
-
-The second is much better because it quantifies your contribution and also highlights specific technologies you used (and therefore have expertise in). This would require you to log what you've done during experiments. But don't exaggerate.
-
-Spend some time going over your resume / past projects to make sure you explain them well.
 
 
 ## SQL
@@ -618,6 +593,28 @@ meanings.
 
 [back to top](#data-science-question-answer)
 
+
+### Glove
+
+[back to top](#data-science-question-answer)
+
+
+### Fasttext
+
+[back to top](#data-science-question-answer)
+
+
+### Elmo
+
+[back to top](#data-science-question-answer)
+
+### GPT 1-2-3
+
+[back to top](#data-science-question-answer)
+
+### BERT
+
+[back to top](#data-science-question-answer)
 
 ## System
 
